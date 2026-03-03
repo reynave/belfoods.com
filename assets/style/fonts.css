@@ -1,0 +1,30 @@
+/* Local font-face template
+	 Place your font files in: THEMES3/assets/fonts/
+	 Example filenames: CustomFont-Regular.woff2, CustomFont-Bold.woff2
+*/
+
+@font-face {
+	font-family: 'VAG-Rounded-Regular';
+	src: url('../fonts/VAG-Rounded-Regular.woff2') format('woff2'),
+			 url('../fonts/VAG-Rounded-Regular.woff') format('woff'),
+			 url('../fonts/VAG-Rounded-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+ 
+@font-face {
+	font-family: 'VAG-Rounded-Bold';
+	src: url('../fonts/VAGRounded-LT-Thin-Bold.woff2') format('woff2'),
+			 url('../fonts/VAGRounded-LT-Thin-Bold.woff') format('woff'),
+			 url('../fonts/VAGRounded-LT-Thin-Bold.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+/* Usage helpers */
+.ff-custom { font-family: 'VAG-Rounded-Regular' }
+.ff-custom--bold { font-family: 'CustomFont', Arial, sans-serif; font-weight:700; }
+
+/* Tip: adjust paths if your fonts folder is elsewhere (e.g., ../assets/fonts/ or ./fonts/) */
+

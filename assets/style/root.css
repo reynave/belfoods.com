@@ -1,0 +1,39 @@
+/* Global color tokens */
+:root {
+    --color-brown-dark: #3b1a13;
+    --color-brown: #592716;
+    --color-brown-ink: #c20f2f;
+    --color-yellow: #f5d259;
+    --color-red: #f1464b;
+    --color-white: #ffffff;
+    --color-hero-start: #ff6f61;
+    --color-hero-end: #ff9966;
+    --color-footer-bg: #212529;
+    --color-footer-text: #adb5bd;
+    --color-footer-link: #f8f9fa;
+    --color-brown-soft: rgba(89, 39, 22, 0.1);
+    --color-brown-shadow: rgba(59, 26, 19, 0.15);
+    --shadow-header: rgba(0, 0, 0, 0.08);
+    --color-border-light: rgba(0, 0, 0, 0.08);
+    --color-banner-bg: #f78e21;
+    --color-banner-text: #c20f2f;
+    --color-banner-highlight: #fa4516;
+    --color-banner-button: #26bdec;
+    --color-banner-button-text: #020202;
+    --color-banner-button-shadow: rgba(0, 173, 239, 0.35);
+    --color-slider-bg: #fff3c9;
+    --color-slider-highlight: #ffe9a6;
+    --color-slider-pill-active: #1f1f1f;
+    --color-slider-pill-muted: rgba(31, 31, 31, 0.5);
+    --color-slider-text: #1f1f1f;
+    --color-slider-subtext: rgba(31, 31, 31, 0.7);
+    --color-promo-bg: #ffffff;
+    --color-promo-card-bg: #fff7e7;
+    --color-promo-text: #1d1d1f;
+    --color-promo-button: #101010;
+    --color-promo-button-text: #ffffff;
+
+     --attachment-gradient: linear-gradient(180deg, #ff8a00 0%, #ffb300 60%, #ffd400 100%);
+}
+
+

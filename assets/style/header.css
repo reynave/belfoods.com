@@ -1,0 +1,254 @@
+/* Header and navigation styles */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1040; 
+    padding: 0 2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid #e67403;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.site-header {
+    background: #fd8103;
+   
+}
+
+.site-header.is-scrolled {
+    background-color: #fd8103;
+
+}
+
+.site-header a {
+    text-decoration: none !important;
+
+
+}
+
+.brand-logo {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.brand-logo .nav-logo {
+   
+}
+
+
+
+.top-bar {
+    background-color: var(--color-brown-dark);
+    color: var(--color-white);
+    font-size: 0.875rem;
+}
+
+.top-bar .contact-info span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.top-bar .contact-info i {
+    font-size: 1rem;
+}
+
+.top-bar-message {
+    text-align: center;
+
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+.top-bar-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.top-bar-btn {
+    border-radius: 5px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.45rem 1.25rem;
+    border: none;
+}
+
+.top-bar-btn-danger {
+    background-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.top-bar-btn-warning {
+    background-color: var(--color-yellow);
+    color: var(--color-brown-ink);
+}
+
+.main-nav {
+    background-color: transparent;
+    padding: 0.3rem 0;
+}
+
+.main-menu {
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.main-menu .nav-link {
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.45rem 1.25rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'VAG-Rounded-Bold'; 
+    font-size: 1.1rem;
+    letter-spacing: 0.7px; 
+}
+.main-menu .nav-link:hover {
+    background-color: var(--color-brown-soft);
+   
+}
+
+.main-menu .nav-link.active {
+  background-color: #c20f2f;
+    color: #ffffff;
+ 
+}
+
+/* Legacy sub-menu styles kept for reference - now using Bootstrap dropdown */
+
+ 
+.btn-orange{
+    background: #fd8103;
+     border-radius: 999px;
+    border: 2px solid #fd800376;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.4rem 1.5rem;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4); 
+   font-family: 'VAG-Rounded-Bold'; 
+}
+.btn-orange:hover {
+    color: #fd8103;
+    background-color: #fff;
+}
+
+.btn-order {
+    border-radius: 999px;
+    border: 2px solid #d4a53d;
+    color: #32270e;
+    font-weight: 700;
+    padding: 0.4rem 1.5rem;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+    background-color: var(--color-white);
+   font-family: 'VAG-Rounded-Bold'; 
+}
+
+.btn-order:hover {
+    color: var(--color-white);
+    background-color: #d4a53d;
+}
+
+@media (max-width: 575.98px) {
+    .site-header {
+        padding: 0 1rem;
+    }
+
+    .top-bar-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .btn-order {
+        margin-top: 0.75rem;
+    }
+}
+
+/* Bootstrap navbar toggler customization */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 0.4rem 0.6rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.3);
+}
+
+/* Dropdown (sub-menu) styling override for Bootstrap dropdown */
+.main-menu .dropdown-menu.sub-menu {
+    background-color: #fd8103;
+    border: 3px solid var(--color-border-light);
+    border-radius: 12px;
+    box-shadow: 0 15px 35px var(--shadow-header);
+    padding: 0.5rem 0;
+    min-width: 220px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'VAG-Rounded-Bold';
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.main-menu .dropdown-menu.sub-menu .dropdown-item {
+    color: #fff;
+    font-weight: 500;
+    padding: 0.5rem 1.25rem;
+}
+
+.main-menu .dropdown-menu.sub-menu .dropdown-item:hover,
+.main-menu .dropdown-menu.sub-menu .dropdown-item:focus {
+    background-color: var(--color-brown-soft);
+    color: #fff;
+}
+
+/* Mobile collapsed menu styles */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .main-menu {
+        flex-direction: column;
+        align-items: stretch !important;
+        gap: 0.25rem !important;
+    }
+
+    .main-menu .nav-link {
+        padding: 0.6rem 1rem;
+    }
+
+    .main-menu .dropdown-menu.sub-menu {
+        position: static !important;
+        float: none;
+        border: none;
+        box-shadow: none;
+        border-radius: 8px;
+        margin-top: 0;
+        padding-left: 1rem;
+    }
+
+    .main-menu .btn-order {
+        margin-top: 0.5rem;
+        text-align: center;
+        justify-content: center;
+    }
+}
