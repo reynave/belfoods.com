@@ -17,7 +17,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
             <div class="row ">
               
-                <?php foreach($core['content']['list'] as $row){ ?>
+                <?php 
+                $i=0;
+                foreach($core['content']['list'] as $row){ $i++;?>
                     <div class="col-12 col-md-3 mb-4">
                         <div class="card h-100 shadow-sm border-0 rounded-4" style="background-color: #fd8103">
                             <div class="p-3">
@@ -33,12 +35,29 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             </div>
                         </div>
                     </div>
+
+                    <?php if($i == 4){?>
+
+                        <div class="col-12 col-md-6 mb-4">
+                            <div class="slick-1-1"> 
+                                <?php foreach($custom['bannerAds'] as $row){ ?>
+                                <div>
+                                    <img src="<?php echo $row['img']?>" width="100%" class="rounded-4" alt="Bento Drummies Sushi Rice">
+                                
+                                  <div><?php echo $custom['bannerAds_action'];?></div>
+                                </div>
+                                <?php } ?> 
+                               
+                            </div>
+
+                        
+                        </div>
+ 
+                    <?php } ?>
+
                 <?php } ?>
 
-                <div class="col-12 col-md-6 mb-4">
-                    <img src="./public/kreasi/Caesar Salad Chicken Fillet .jpg" width="100%" class="rounded-4"
-                                alt="Bento Drummies Sushi Rice">
-                </div>
+               
  
             </div>
         </div>
@@ -49,7 +68,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                  
                     <h1><?php echo $core['content']['name']?></h1>
                     <img src="<?php echo $core['content']['img']?>" class="rounded shadow-sm" width="100%">
                 </div>

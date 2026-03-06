@@ -18,7 +18,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-12">
                 <?php foreach($core['content']['galleries'] as $gallery){ ?>
                 <img src="<?php echo $gallery['img']; ?>" width="100%"> 
-                
+                 <div class="text-center"> <?php echo $gallery['action']; ?></div>
                 <?php } ?>
 
                 <div class="text-center"> <?php echo $core['content']['galleries_action']; ?></div>
@@ -142,8 +142,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
             <div class="row">
                 <div class="col-12 text-end">
-                    <h2 class="VAG-Rounded-Bold"> <?php echo $row['h1']; ?></h2>
-                    <h1 class="fnText" >
+                    <h2 class="VAG-Rounded-Bold fbText"   <?php echo $row['data']['h1']; ?>> <?php echo $row['h1']; ?></h2>
+                    <h1 class="fnText"   <?php echo $row['data']['h2']; ?> >
                        <?php echo $row['h2']; ?>
                     </h1>
                     <a href="<?php echo $row['href']; ?>" class="btn btn-lg btn-orange px-5"><?php echo $row['h4']; ?></a>
@@ -165,42 +165,19 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
         </div>
         <div class="row g-4">
-            <div class="col-md-4">
+             <?php foreach($custom['promo'] as $row){ ?>
+            <div class="col-md-4 col-12">
                 <div class="card shadow-lg border-1 rounded-4">
-                    <img src="https://belfoods.com/wp-content/uploads/2013/10/3216594_xl.jpg"
-                        class="card-img-top rounded-top-4" alt="Bento Drummies Sushi Rice">
+                    <img src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" width="100%"
+                        class="card-img-top rounded-top-4" >
                     <div class="card-body pb-3">
-                        <h3 class="mb-1">Mempersiapkan Acara special Tahun baru 2025</h3>
+                        <h3 class="mb-1"><?php echo $row['name']?></h3>
 
-                        <a href="#" class="btn btn-white rounded mt-3">Detail <i
-                                class="bi bi-caret-right-square-fill"></i></a>
+                        <a href="<?php echo $row['href']?>" class="btn btn-white rounded mt-3">Detail <i class="bi bi-caret-right-square-fill"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card shadow-lg border-1 rounded-4">
-                    <img src="https://belfoods.com/wp-content/uploads/2013/12/image001-624x433.jpg"
-                        class="card-img-top rounded-top-4" alt="Bento Drummies Sushi Rice">
-                    <div class="card-body">
-                        <h3 class="mb-1">Mempersiapkan Acara special Tahun baru 2025</h3>
-                        <a href="#" class="btn btn-white rounded mt-3">Detail <i
-                                class="bi bi-caret-right-square-fill"></i></a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-lg border-1 rounded-4">
-                    <img src="https://belfoods.com/wp-content/uploads/2013/12/image001-624x433.jpg"
-                        class="card-img-top rounded-top-4" alt="Bento Drummies Sushi Rice">
-                    <div class="card-body">
-                        <h3 class="mb-1">Mempersiapkan Acara special Tahun baru 2025</h3>
-
-                        <a href="#" class="btn btn-white rounded mt-3">Detail <i
-                                class="bi bi-caret-right-square-fill"></i></a>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </section>

@@ -118,4 +118,15 @@ $(document).ready(function () {
                autoplay : true,
         pauseOnHover:false,
     });
+
+
+     $('.slick-1-1').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        speed: 300,
+               autoplay : true,
+        pauseOnHover:false,
+    });
 });

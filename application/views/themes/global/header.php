@@ -45,7 +45,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <nav class="navbar navbar-expand-lg main-nav">
             <div class="container">
-                <a class="navbar-brand brand-logo" href="#">
+                <a class="navbar-brand brand-logo" href="<?php echo base_url(); ?>">
                     <img height="60" src="<?php echo base_url(); ?>public/belfoods.png"  alt="Belfoods logo">
                 </a>
 

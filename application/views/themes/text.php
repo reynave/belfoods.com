@@ -10,7 +10,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <img src="<?php echo $core['content']['img']?>" class="rounded shadow-sm" width="100%">
                 </div>
                 <div class="col-12">
-                     <?php echo count($core['content']) <= 0 ? $core['content']['insert'] : ''; 
+                     <?php echo $core['content']['id'] == null ? $core['content']['insert'] : ''; 
                      echo $core['content']['edit']; ?>
                     <section class="recipe-detail mt-4">
                         <div class="card border-0 ">

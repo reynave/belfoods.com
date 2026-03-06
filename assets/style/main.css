@@ -962,6 +962,11 @@ h6 {
     margin: 0 auto;
     max-width: 720px;
 }
+.wrapper-md {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
 
 .banner-product-detail {
     padding: 6.5rem 0;
@@ -1104,3 +1109,24 @@ h6 {
 .bg-dark {
     background: #000 !important;
 }
+
+ .half-bgn {
+            height: 80vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .bg-2 {
+            background-color: rgb(193, 2, 48);
+        }
+
+        .bg-24 {
+            background-color: rgb(255, 71, 19);
+        }
+
+        .bg-3 {
+            background-color: rgb(38, 188, 235);
+        }

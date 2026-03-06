@@ -1,4 +1,4 @@
-<?php
+ <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
 
@@ -7,23 +7,25 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
             <div class="row g-1">
                 <div class="col-4">
+                    <a href="<?php echo base_url(); ?>">
                     <img src="<?php echo base_url(); ?>public/logo-mini.png" height="60px" alt="Belfoods Logo">
+</a>
                 </div>
                 <div class="col-4 text-center">
                     <div class="social-icons d-flex gap-3 text-center justify-content-center mb-2">
-                        <a href="#" aria-label="Facebook" class="social-icon">
+                        <a href="https://www.facebook.com/belfoodsID" target="_blank" aria-label="Facebook" class="social-icon">
                             <i class="bi bi-facebook"></i>
                         </a>
-                        <a href="https://www.instagram.com/belfoodsid" aria-label="Instagram" class="social-icon">
+                        <a href="https://www.instagram.com/belfoodsid"  target="_blank" aria-label="Instagram" class="social-icon">
                             <i class="bi bi-instagram"></i>
                         </a>
-                        <a href="#" aria-label="YouTube" class="social-icon">
+                        <a href="https://www.youtube.com/@BelfoodsIndonesia"  target="_blank" aria-label="YouTube" class="social-icon">
                             <i class="bi bi-youtube"></i>
                         </a>
-                        <a href="https://www.tiktok.com/@belfoodsid" aria-label="TikTok" class="social-icon">
+                        <a href="https://www.tiktok.com/@belfoodsid"  target="_blank" aria-label="TikTok" class="social-icon">
                             <i class="bi bi-tiktok"></i>
                         </a>
-                        <a href="#" aria-label="Twitter" class="social-icon">
+                        <a href="https://x.com/belfoodsid"  target="_blank" aria-label="Twitter" class="social-icon">
                             <i class="bi bi-twitter-x"></i>
                         </a>
 

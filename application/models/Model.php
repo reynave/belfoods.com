@@ -28,6 +28,8 @@ class Model extends CI_Model {
                 "sales_action" => $this->core->cms_widget_action('sales'),
 
                 "kreasiKilat" => $this->core->post(10, 'Kreasi Kilat'),
+                "promo" => $this->core->post(3, 'promo'),
+                
             );
             return $data;
             break;
@@ -37,9 +39,35 @@ class Model extends CI_Model {
                 "orderNow_action" => $this->core->cms_widget_action('orderNow'),
                 "kreasiKilatTitle" => $this->core->cms_label('kreasiKilatTitle'),
 
+                "bannerAds"   => $this->core->cms_widget('bannerAds'),
+                "bannerAds_action" => $this->core->cms_widget_action('bannerAds'),
+
               );
               return $data;
           break;
+
+          case "about":
+              $data = array(
+                "orderNow"   => $this->core->cms_widget('orderNow'),
+                "orderNow_action" => $this->core->cms_widget_action('orderNow'), 
+
+                "widgetAbout"   => $this->core->cms_widget('widgetAbout'),
+                "widgetAbout_action" => $this->core->cms_widget_action('widgetAbout'), 
+
+                 "widgetAboutTitle"   => $this->core->cms_label('widgetAboutTitle'),
+              );
+              return $data;
+          break;
+
+
+            case "sales":
+              $data = array(
+                "orderNow"   => $this->core->cms_widget('orderNow'),
+                "orderNow_action" => $this->core->cms_widget_action('orderNow'),  
+              );
+              return $data;
+          break;
+
 
           case "blog":
               $data = array(
@@ -57,7 +85,19 @@ class Model extends CI_Model {
               return $data;
           break;
 
-             case "text":
+          case "order":
+              $data = array(
+                "orderNow"   => $this->core->cms_widget('orderNow'),
+                "orderNow_action" => $this->core->cms_widget_action('orderNow'), 
+
+                 "onlineShop"   => $this->core->cms_widget('onlineShop'),
+                "onlineShop_action" => $this->core->cms_widget_action('onlineShop'), 
+
+              );
+              return $data;
+          break;
+
+           case "text":
               $data = array(
                 "orderNow"   => $this->core->cms_widget('orderNow'),
                 "orderNow_action" => $this->core->cms_widget_action('orderNow'), 
