@@ -15,12 +15,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
 
 
-            <div class="row ">
+            <div class="row fnSortable">
               
                 <?php 
                 $i=0;
                 foreach($core['content']['list'] as $row){ $i++;?>
-                    <div class="col-12 col-md-3 mb-4">
+                    <div class="col-12 col-md-3 mb-4 " <?php if($core['login'] == true){ echo ' style="display: block; border:1px solid"' ; } ?>>
                         <div class="card h-100 shadow-sm border-0 rounded-4" style="background-color: #fd8103">
                             <div class="p-3">
                                 <img src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" width="100%" class="rounded-4"
@@ -32,28 +32,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <h1 class="card-title text-white fw-bold py-1"><?php echo $row['name']?></h1>
                                 <a href="<?php echo $row['href']?>" class="btn btn-white rounded mt-1">Lihat Resep <i
                                         class="bi bi-caret-right-square-fill"></i></a>
+                                <div><?php echo $row['action']; ?></div>
                             </div>
                         </div>
                     </div>
 
-                    <?php if($i == 4){?>
-
-                        <div class="col-12 col-md-6 mb-4">
-                            <div class="slick-1-1"> 
-                                <?php foreach($custom['bannerAds'] as $row){ ?>
-                                <div>
-                                    <img src="<?php echo $row['img']?>" width="100%" class="rounded-4" alt="Bento Drummies Sushi Rice">
-                                
-                                  <div><?php echo $custom['bannerAds_action'];?></div>
-                                </div>
-                                <?php } ?> 
-                               
-                            </div>
-
-                        
-                        </div>
- 
-                    <?php } ?>
+                    
 
                 <?php } ?>
 

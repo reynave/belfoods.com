@@ -40,8 +40,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 </section>
 
-<div class="px-5 pt-5 py-3 home-slider">
-
+<div class="px-5 pt-5 py-3 home-slider"> 
 
     <section id="slider" class=" " aria-labelledby="slider-heading">
 
@@ -55,9 +54,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     <a class="slider-tab" href="<?php echo $sub['href']; ?>"><?php echo $sub['name']; ?></a> 
                                 <?php }?>
                             <?php }?>
-                        <?php } ?>
-                    
-
+                        <?php } ?> 
                 </div>
             </div>
 
@@ -82,7 +79,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </section>
 </div>
  
-<div  class="kreasi-kilat">
+<div  class="kreasi-kilat d-none d-md-block">
     <div class="kreasi-kilat-icon">
         <img src="<?php echo base_url(); ?>public/kreasi/Icon-Kreasi-Kilat.png" width="100%" alt="Kreasi Kilat Belfoods">
     </div>
@@ -134,6 +131,44 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </div>
 
 </div>
+ 
+<div  class="kreasi-kilat d-block d-md-none py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-1">
+                <h2 class=" fw-bold "><?php echo $data['name']; ?>  </h2>
+<h1 class="VAG-Rounded-Bold " style="font-size: 3rem;">Masak Sat Set Untuk Keluarga</h1>
+
+            </div>
+            <div class="col-12">
+
+                <div id="blog" class="slick-home-slide mb-5">
+
+                    <?php foreach($custom['kreasiKilat'] as $row){ ?>
+                    <div class="m-2">
+                        <div class="card h-100 shadow-sm border-0 rounded-4" style="background-color: #fd8103;">
+                            <div class="p-3">
+                                <img src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" width="100%"
+                                    class="rounded-4">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="mb-1 text-white"><?php echo $data['name'] ?? 'Kreasi Kilat'; ?></h5>
+                                <h4 class="py-1 text-white"><?php echo $row['name']; ?></h4>
+                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1">Lihat Resep <i
+                                        class="bi bi-caret-right-square-fill"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <?php } ?>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
  
 <?php foreach($custom['infoHome'] as $row){?>
     <section id="info" class="info">
@@ -241,10 +276,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div class="col-12">
                     <h2 class="text-center fw-bold mb-5 color-orange"><?php echo $row['h2']; ?></h2>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <img src="<?php echo $row['img']; ?>" width="90%" alt="<?php echo $row['h1']; ?>">
                 </div>
-                <div class="col-8 text-start">
+                <div class="col-12 col-md-8">
                     <h1 class="text-orange"><?php echo $row['h1']; ?> </h1>
                     <a href="<?php echo $row['href']; ?>" class="btn btn-lg btn-orange px-5"><?php echo $row['h4']; ?></a>
                 </div>

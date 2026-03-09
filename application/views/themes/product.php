@@ -15,15 +15,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
               
                 <div class="col-12 g-1">
 
-                    <div class="row">
+                    <div class="row fnSortable">
                         <?php foreach($core['content']['list'] as $row){ ?>
-                        <div class="col-6 col-md-3 text-center mb-5 product-card">
+                        <div class="col-6 col-md-3 text-center mb-5 product-card" <?php if($core['login'] == true){ echo ' style="display: block; border:1px solid"' ; } ?>>
                             <a href="<?php echo $row['href']; ?>"><img
                                     src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" width="100%">
                                 <div>
                                     <strong><?php echo $row['name']; ?></strong>
                                 </div>
                             </a>
+                           <div> <?php echo $row['action']; ?> </div>
                         </div>
                         <?php } ?>
                     </div>
@@ -54,7 +55,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <?php echo $core['content']['edit']; ?>
                     </div>
                     <div class="col-12 col-md-6 order-1 order-md-2 text-center mb-5">
-                        <img src="./public/belfoods-product-1200px/BF BTS 450gr - New.png" width="80%">
+                        <img src="<?php echo $core['content']['img']?>" width="80%">
 
 
                     </div>

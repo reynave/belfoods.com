@@ -6,12 +6,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="container ">
 
             <div class="row g-1">
-                <div class="col-4">
+                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <a href="<?php echo base_url(); ?>">
-                    <img src="<?php echo base_url(); ?>public/logo-mini.png" height="60px" alt="Belfoods Logo">
-</a>
+                        <img src="<?php echo base_url(); ?>public/logo-mini.png" height="60px" alt="Belfoods Logo">
+                    </a>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-12 col-md-4 text-center order-3 order-md-2">
                     <div class="social-icons d-flex gap-3 text-center justify-content-center mb-2">
                         <a href="https://www.facebook.com/belfoodsID" target="_blank" aria-label="Facebook" class="social-icon">
                             <i class="bi bi-facebook"></i>
@@ -35,7 +35,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div class="fnRichtext" <?php echo $footer['attributes']; ?>><?php echo $footer['content']; ?>  </div>
                 </div>
 
-                <div class="col-4 text-end">
+                <div class="col-12 col-md-4 text-md-end text-center order-2 order-md-3 mb-3 mb-md-0">
                     <img src="<?php echo base_url(); ?>public/sm/belfoods-Halal.png" class="mx-1" height="70px" alt="Halal Indonesia">
 
                     <img src="<?php echo base_url(); ?>public/sm/NKV-Belfoods.png" class="mx-1" height="70px" alt="Halal Indonesia">

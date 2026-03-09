@@ -14,10 +14,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
 
 
-            <div class="row ">
+            <div class="row fnSortable">
               
                 <?php foreach($core['content']['list'] as $row){ ?>
-                    <div class="col-12 col-md-3 mb-4">
+                    <div class="col-12 col-md-3 mb-4" <?php if($core['login'] == true){ echo ' style="display: block; border:1px solid"' ; } ?>>
 
                         
                         <div class="card shadow-lg border-1 rounded-4">
@@ -26,6 +26,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <h4 class="mb-1"><?php echo $row['name']; ?></h4> 
                                 <p><?php echo $row['date'] ?? 'No date'; ?></p>
                                 <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded">Baca selengkapnya <i class="bi bi-caret-right-square-fill"></i></a>
+                                <div><?php echo $row['action']; ?></div>
                             </div>
                         </div> 
                     </div>
