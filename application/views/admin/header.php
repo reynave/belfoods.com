@@ -10,6 +10,7 @@ if ($this->core->login()) {
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>admin/js/jquery-ui-1.12.1.custom/jquery-ui.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>admin/js/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>admin/elFinder-2.1.50/css/elfinder.min.css" />
+ 
     <link href="<?php echo base_url(); ?>admin/css/mirrel5.css" rel="stylesheet">  
     <script>
         let base_url = "<?php echo base_url(); ?>"; 

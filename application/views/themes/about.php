@@ -14,22 +14,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
                     </div>
-                    <div class="col-12 text-center">
+                     <div class="col-12 text-center">
                         <h5 class="text-white mt-3 fnText" <?php echo $core['content']['data']['h2'];?> ><?php echo $core['content']['h2'];?> </h5>
                         
-                        <?php if($core['login'] == true){?>
-                        <div class='alert alert-warning'>
-                            <label>URL Yotube embed code url only ex:https://www.youtube.com/embed/zJVh2Lm5ia8?si=RKauKpOK5FQbtyT</label>
-                            <pre class="fnText form-control" <?php echo $core['content']['data']['h3'];?>><?php echo $core['content']['h3'];?></pre>
-                        </div>
-                        <?php } ?>
-                        <iframe width="800" height="450" class="p-2 bg-dark rounded-5"
-                            src="<?php echo $core['content']['h3'];?>"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <img src="<?php echo $core['content']['img'];?>" class="rounded-5 mt-4" width="100%" alt="About Belfoods.com">
 
+                    </div>  
+                    <div class="col-12 text-center">
+                        
+<div> <?php echo $core['content']['edit'];?> </div>
                     </div>
+
+                    
                 </div>
             </div>
 
@@ -44,8 +40,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </div>
 
                 <div class="col-6">
-                    <?php echo $core['content']['edit'];?>
-                    <img src="<?php echo $core['content']['img'];?>" class="rounded-5" width="100%" alt="Contact Sales">
+                    <?php echo $core['content']['galleries_action'];?>
+                    <?php foreach($core['content']['galleries'] as $row){?>
+                    <img src="<?php echo $row['img'];?>" class="rounded-5" width="100%">
+                    <?php echo $row['action']?>
+                    <?php } ?>
                 </div>
             </div>
         </div>

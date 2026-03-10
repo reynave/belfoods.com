@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(0); // Set E_ALL for debuging
+//error_reporting(0); // Set E_ALL for debuging
 
 // // To Enable(true) handling of PostScript files by ImageMagick
 // // It is disabled by default as a countermeasure 

@@ -191,32 +191,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </section> 
 <?php } ?> 
    
-
-<section id="blog" class="py-5 blog-section bg-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="text-center fw-bold mb-5">Article Terbaru</h2>
-            </div>
-        </div>
-        <div class="row g-4">
-             <?php foreach($custom['promo'] as $row){ ?>
-            <div class="col-md-4 col-12">
-                <div class="card shadow-lg border-1 rounded-4">
-                    <img src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" width="100%"
-                        class="card-img-top rounded-top-4" >
-                    <div class="card-body pb-3">
-                        <h3 class="mb-1"><?php echo $row['name']?></h3>
-
-                        <a href="<?php echo $row['href']?>" class="btn btn-white rounded mt-3">Detail <i class="bi bi-caret-right-square-fill"></i></a>
-                    </div>
-                </div>
-            </div>
-            <?php } ?>
-        </div>
-    </div>
-</section>
-
+ 
  
  <?php foreach($custom['videoHome'] as $row){?>
     <section id="tvc" class="hero-video" style="opacity: 0.8;">

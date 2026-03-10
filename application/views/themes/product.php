@@ -13,25 +13,33 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <?php echo $core['content']['insert']; ?>
                 </div>
               
-                <div class="col-12 g-1">
-
-                    <div class="row fnSortable">
+                
+            </div>
+              <div class="row fnSortable">
                         <?php foreach($core['content']['list'] as $row){ ?>
-                        <div class="col-6 col-md-3 text-center mb-5 product-card" <?php if($core['login'] == true){ echo ' style="display: block; border:1px solid"' ; } ?>>
-                            <a href="<?php echo $row['href']; ?>"><img
-                                    src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" width="100%">
-                                <div>
-                                    <strong><?php echo $row['name']; ?></strong>
-                                </div>
-                            </a>
-                           <div> <?php echo $row['action']; ?> </div>
+
+                        <div class="col-12 col-md-3 mb-5">
+                            <div class="product-card">
+                                <a href="<?php echo $row['href']; ?>">
+                                    <div class="text-center">
+                                    <img class="product-card-img" width="100%"
+                                        src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/900x900/fff/fd8103.jpg' : $row['img']; ?>" >
+                                    </div>  
+                                      <div class="product-card-info d-grid rounded-bottom-5">
+                                        <h2 class="product-card-brand"><?php echo $core['pages']['name']; ?></h2>
+                                        <h1 class="product-card-name" style="min-height: 60px;"><?php echo $row['name']; ?></h1>
+                                        <button class="btn  btn-light rounded-pill">Selengkapnya</button>
+                                    </div>
+                                </a>
+                              
+                            </div>
+                            <div class="text-center"> <?php echo $row['action']; ?> </div>
                         </div>
+
+
+                       
                         <?php } ?>
                     </div>
-
-
-                </div>
-            </div>
         </div>
     </div>
 
@@ -49,7 +57,6 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div
                         class="col-12 col-md-6 order-2 order-md-1 align-content-center d-flex flex-column justify-content-center">
                         <h1 class="text-orange"><?php echo $core['content']['name']?></h1>
-                        <h2 class="py-2 fnText" <?php echo $core['content']['data']['h1']; ?>><?php echo $core['content']['h1']?></h2>
                         <P class=""><strong class="fnText" <?php echo $core['content']['data']['h2']; ?>><?php echo $core['content']['h2']?></strong></p>
                         <div class="fnRichtext" <?php echo $core['content']['data']['content']; ?>> <?php echo $core['content']['content']; ?> </div>
                         <?php echo $core['content']['edit']; ?>
@@ -88,21 +95,28 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         $n++;
                     }   
                     ?>
-                    <div class="col-12 col-md-3 mb-4">
-                        <div class="card h-100 shadow-sm border-0 rounded-4" style="background-color: #fd8103">
-                            <div class="p-3">
-                                <img src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" width="100%" class="rounded-4"
-                                    alt="<?php echo $row['h1']; ?>">
-                            </div>
 
-                            <div class="card-body">
-                                <h5 class="mb-1"><?php echo $core['pages']['title']?></h5>
-                                <h1 class="card-title text-white fw-bold py-1"><?php echo $row['name']?></h1>
-                                <a href="<?php echo $row['href']?>" class="btn btn-white rounded mt-1">Lihat Resep <i
-                                        class="bi bi-caret-right-square-fill"></i></a>  
+
+                    <div class="col-12 col-md-3 mb-5">
+                            <div class="product-card">
+                                <a href="<?php echo $row['href']; ?>">
+                                    <div class="text-center">
+                                    <img class="product-card-img" width="100%"
+                                        src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/900x900/fff/fd8103.jpg' : $row['img']; ?>" >
+                                    </div>  
+                                      <div class="product-card-info d-grid rounded-bottom-5">
+                                        <h2 class="product-card-brand"><?php echo $core['pages']['name']; ?></h2>
+                                        <h1 class="product-card-name" style="min-height: 60px;"><?php echo $row['name']; ?></h1>
+                                        <button class="btn  btn-light rounded-pill">Selengkapnya</button>
+                                    </div>
+                                </a>
+                              
                             </div>
+                            <div class="text-center"> <?php echo $row['action']; ?> </div>
                         </div>
-                    </div>
+
+
+                   
                 <?php 
                     if($n == 5) {
                         break; // Hentikan loop setelah menampilkan 2 item

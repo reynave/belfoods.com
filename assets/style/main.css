@@ -962,6 +962,7 @@ h6 {
     margin: 0 auto;
     max-width: 720px;
 }
+
 .wrapper-md {
     margin: 0 auto;
     max-width: 960px;
@@ -1110,23 +1111,73 @@ h6 {
     background: #000 !important;
 }
 
- .half-bgn {
-            height: 80vh;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: -1;
-        }
+.half-bgn {
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
 
-        .bg-2 {
-            background-color: rgb(193, 2, 48);
-        }
+.bg-2 {
+    background-color: rgb(193, 2, 48);
+}
 
-        .bg-24 {
-            background-color: rgb(255, 71, 19);
-        }
+.bg-24 {
+    background-color: rgb(255, 71, 19);
+}
 
-        .bg-3 {
-            background-color: rgb(38, 188, 235);
-        }
+.bg-3 {
+    background-color: rgb(38, 188, 235);
+}
+
+
+.product-card {
+    border-radius: 2.5rem;
+    overflow: visible;
+    background: #fff;
+}
+
+.product-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.product-card-img {
+    width: 100%;
+    padding: 1rem; 
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+.product-card-info {
+    background: #ff6c02;
+    padding: 1rem 2rem;
+}
+
+.product-card-brand {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+    font-size: 1.1rem;
+}
+
+.product-card-name {
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+.product-card-name span {
+    color: #fff; 
+}
+
+.product-card-btn:hover {
+    background: transparent;
+    color: #fff;
+}
