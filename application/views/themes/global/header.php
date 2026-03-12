@@ -1,20 +1,19 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
-<meta charset='utf-8'>
+    <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <?php echo $core['opengraph']; ?>
        
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Hedvig+Letters+Sans&family=League+Spartan:wght@100..900&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Hedvig+Letters+Sans&family=League+Spartan:wght@100..900&family=Luckiest+Guy&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -42,8 +41,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <nav class="navbar navbar-expand-lg main-nav">
             <div class="container">
-                <a class="navbar-brand brand-logo" href="<?php echo base_url(); ?>">
-                    <img height="60" src="<?php echo base_url(); ?>public/belfoods.png"  alt="Belfoods logo">
+                <a class="navbar-brand brand-logo " href="<?php echo base_url(); ?>">
+                    <div class="logo-wrapper">
+                         <img  src="<?php echo base_url(); ?>public/belfoods.png"  alt="Belfoods logo" width="100%" >
+                    </div>
+                   
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -78,9 +80,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <?php echo $row['h1']; ?> <i class="bi bi-bag-check"></i>
                             </a>
                                   <?php echo $row['modal']; ?>
-                            <?php } ?>
-                          
-
+                            <?php } ?> 
                         </li>
                     
                     </ul>

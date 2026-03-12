@@ -867,6 +867,7 @@ class Api extends CI_Controller
         $data = $this->input->post('data');
         $update  = [];
         $content = str_replace('<br data-mce-bogus="1">', '', $this->input->post('content'));
+        $content = strip_tags($content);
         if ($data['table'] == 'cms_label') {
             $update = array(
                 "content" =>  $content,

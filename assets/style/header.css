@@ -30,16 +30,17 @@
 
 }
 
-.brand-logo {
-    display: flex;
-    position: relative;
-    align-items: center;
+.brand-logo { 
+    position: relative; 
+    width: 87px; 
 }
-
-.brand-logo .nav-logo {
-   
+.brand-logo .logo-wrapper{
+    position: absolute;
+    top: -36px;
+    width: 100%;
+    left:0px;
 }
-
+ 
 
 
 .top-bar {

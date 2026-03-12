@@ -17,14 +17,37 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <?php echo $gallery['action']; ?>
                         </div>
                     <?php } ?>
-                    
+
                     <?php if($core['login']){ ?>
                     <div class="alert alert-warning">
-                       <p>Halaman ini adalah halaman produk, untuk mengubah tampilannya silahkan edit pada bagian konten dengan tipe produk</p>
-                        <?php echo $core['content']['insert']; ?>  <?php echo $core['content']['galleries_action']; ?> 
+                        <p>Halaman ini adalah halaman produk, untuk mengubah tampilannya silahkan edit pada bagian konten dengan tipe produk</p>
+                        <?php echo $core['content']['insert']; ?>  <?php echo $core['content']['galleries_action']; ?>
+
+                        <p>Pengaturan Warna code (#hex)</p>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td><strong>H4. Background Color </strong></td>
+                                    <td>
+                                        <div class="form-control fnText" <?php echo $core['content']['data']['h4']; ?>><?php echo $core['content']['h4']; ?><div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><strong>H5. H1 Color (big text)</strong></td>
+                                    <td>
+                                        <div class="form-control fnText" <?php echo $core['content']['data']['h5']; ?>><?php echo $core['content']['h5']; ?><div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td><strong>H6. Content text color</strong></td>
+                                    <td>
+                                        <div class="form-control fnText" <?php echo $core['content']['data']['h6']; ?>><?php echo $core['content']['h6']; ?><div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                      </div>
-                     <?php } ?>
-                   
+                   <?php } ?>
                 </div>
               
                 
@@ -64,7 +87,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
 
-    <section class=" bg-light-gold banner-product-detail">
+    <section class=" bg-light-gold banner-product-detail" style="<?php echo $core['content']['h4'] == '' ? "":"background-color:#".$core['content']['h4']; ?>">
         <div class="wrapper">
 
             <div class="container ">
@@ -72,9 +95,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div
                         class="col-12 col-md-6 order-2 order-md-1 align-content-center d-flex flex-column justify-content-center">
  
-                        <h1 class="text-orange"><?php echo $core['content']['name']?></h1>
-                        <P class=""><strong class="fnText" <?php echo $core['content']['data']['h2']; ?>><?php  echo $core['content']['h2']?></strong></p>
-                        <div class="fnRichtext" <?php echo $core['content']['data']['content']; ?>> <?php echo $core['content']['content']; ?> </div>
+                        <h1 class="text-orange" style="<?php echo $core['content']['h5'] == '' ? "":"color:#".$core['content']['h5']; ?>"><?php echo $core['content']['name']?></h1>
+                        <p style="<?php echo $core['content']['h6'] == '' ? "":"color:#".$core['content']['h6']; ?>"><strong class="fnText" <?php echo $core['content']['data']['h2']; ?>><?php  echo $core['content']['h2']?></strong></p>
+                        <div style="<?php echo $core['content']['h6'] == '' ? "":"color:#".$core['content']['h6']; ?>" class="fnRichtext" <?php echo $core['content']['data']['content']; ?>> <?php echo $core['content']['content']; ?> </div>
                         <?php echo $core['content']['edit']; ?>
                     </div>
                     <div class="col-12 col-md-6 order-1 order-md-2 text-center mb-5">
