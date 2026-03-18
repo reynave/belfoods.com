@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>
-      
+<!-- HOME BIG BANNER   -->
 <section id="home-banner" class="home-banner">  
     <?php foreach($custom['banner'] as $row){?>
     <div>
@@ -11,7 +11,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </section>
 <?php echo $custom['banner_action']; ?>
 
-
+<!-- HOME DARK BGN INFO   -->
 <section class="mb-5 bg-dark text-white py-5">
     <div class="container">
         <div class="row">
@@ -40,6 +40,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 </section>
 
+<!-- PRODUCT CATALOG  -->
 <div class="px-5 pt-5 py-3 home-slider"> 
 
     <section id="slider" class=" " aria-labelledby="slider-heading">
@@ -79,12 +80,19 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </section>
 </div>
  
+<!-- Kreasi Kilat BLOG -->
 <div  class="kreasi-kilat d-none d-md-block">
     <div class="kreasi-kilat-icon">
-        <img src="<?php echo base_url(); ?>public/kreasi/Icon-Kreasi-Kilat.png" width="100%" alt="Kreasi Kilat Belfoods">
+        <?php foreach($custom['kreasiKilatImg'] as $row){?>
+            <img src="<?php echo $row['img']; ?>" width="100%" alt="Kreasi Kilat Belfoods">
+      
+            <div class="text-center"> <?php echo $row['modal']; ?> </div>
+        <?php } ?>
+ 
+        
     </div>
-    <div class="container" >
 
+    <div class="container" > 
         <div class="row g-0"> 
             
             <div class="col-9 offset-3">
@@ -115,9 +123,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             </div>
                             <div class="card-body">
                                 <h5 class="mb-1 text-white"><?php echo $data['name'] ?? 'Kreasi Kilat'; ?></h5>
-                                <h4 class="py-1 text-white"><?php echo $row['name']; ?></h4>
-                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1">Lihat Resep <i
-                                        class="bi bi-caret-right-square-fill"></i></a>
+                               <div style="min-height: 80px;">
+                                 <h4 class="py-1 text-white" ><?php echo $row['name']; ?></h4></div>
+                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1">Lihat Resep </a>
                             </div>
                         </div>
                     </div>
@@ -129,15 +137,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
         </div>
     </div>
-
 </div>
  
+
 <div  class="kreasi-kilat d-block d-md-none py-5">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center mb-1">
                 <h2 class=" fw-bold "><?php echo $data['name']; ?>  </h2>
-<h1 class="VAG-Rounded-Bold " style="font-size: 3rem;">Masak Sat Set Untuk Keluarga</h1>
+                <h1 class="VAG-Rounded-Bold " style="font-size: 3rem;">Masak Sat Set Untuk Keluarga</h1>
 
             </div>
             <div class="col-12">
@@ -154,8 +162,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <div class="card-body">
                                 <h5 class="mb-1 text-white"><?php echo $data['name'] ?? 'Kreasi Kilat'; ?></h5>
                                 <h4 class="py-1 text-white"><?php echo $row['name']; ?></h4>
-                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1">Lihat Resep <i
-                                        class="bi bi-caret-right-square-fill"></i></a>
+                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1 fw-bold">Lihat Resep </a>
                             </div>
                         </div>
                     </div>
@@ -168,8 +175,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 </div>
 
-
- 
+ <!-- Info Buah Hati -->
 <?php foreach($custom['infoHome'] as $row){?>
     <section id="info" class="info">
         <div class="container "
@@ -178,7 +184,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="row">
                 <div class="col-12 text-end">
                     <h2 class="VAG-Rounded-Bold fbText"   <?php echo $row['data']['h1']; ?>> <?php echo $row['h1']; ?></h2>
-                    <h1 class="fnText"   <?php echo $row['data']['h2']; ?> >
+                    <h1 class="fnRichtext"   <?php echo $row['data']['h2']; ?> >
                        <?php echo $row['h2']; ?>
                     </h1>
                     <a href="<?php echo $row['href']; ?>" class="btn btn-lg btn-orange px-5"><?php echo $row['h4']; ?></a>
@@ -249,12 +255,12 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="row g-1">
 
                 <div class="col-12">
-                    <h2 class="text-center fw-bold mb-5 color-orange"><?php echo $row['h2']; ?></h2>
+                    <h2 class="text-end fw-bold mb-5 color-orange"><?php echo $row['h2']; ?></h2>
                 </div>
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-5 text-end">
                     <img src="<?php echo $row['img']; ?>" width="90%" alt="<?php echo $row['h1']; ?>">
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-7 text-end  align-content-center">
                     <h1 class="text-orange"><?php echo $row['h1']; ?> </h1>
                     <a href="<?php echo $row['href']; ?>" class="btn btn-lg btn-orange px-5"><?php echo $row['h4']; ?></a>
                 </div>

@@ -13,9 +13,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </div>
                 <div class="col-12 col-md-4 text-center order-3 order-md-2">
                     <div class="social-icons d-flex gap-3 text-center justify-content-center mb-2">
-                        <a href="https://www.facebook.com/belfoodsID" target="_blank" aria-label="Facebook" class="social-icon">
-                            <i class="bi bi-facebook"></i>
-                        </a>
+                      
                         <a href="https://www.instagram.com/belfoodsid"  target="_blank" aria-label="Instagram" class="social-icon">
                             <i class="bi bi-instagram"></i>
                         </a>
@@ -25,9 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <a href="https://www.tiktok.com/@belfoodsid"  target="_blank" aria-label="TikTok" class="social-icon">
                             <i class="bi bi-tiktok"></i>
                         </a>
-                        <a href="https://x.com/belfoodsid"  target="_blank" aria-label="Twitter" class="social-icon">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
+                      
 
                     </div>
 

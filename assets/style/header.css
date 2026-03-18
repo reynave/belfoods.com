@@ -36,12 +36,14 @@
 }
 .brand-logo .logo-wrapper{
     position: absolute;
-    top: -36px;
-    width: 100%;
+       top: -29px;
+    width: 80%;
     left:0px;
 }
  
-
+a.nav-link { 
+    margin-left: 0.5rem;
+}
 
 .top-bar {
     background-color: var(--color-brown-dark);
@@ -115,8 +117,8 @@
     border-radius: 10px;
     padding: 0.45rem 1.25rem;
     transition: background-color 0.2s ease, color 0.2s ease;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    font-family: 'VAG-Rounded-Bold'; 
+   
+   font-family: "Nunito", sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.7px; 
 }
@@ -202,8 +204,8 @@
     box-shadow: 0 15px 35px var(--shadow-header);
     padding: 0.5rem 0;
     min-width: 220px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    font-family: 'VAG-Rounded-Bold';
+   
+      font-family: "Nunito", sans-serif;  
     font-size: 1rem;
     letter-spacing: 0.5px;
 }

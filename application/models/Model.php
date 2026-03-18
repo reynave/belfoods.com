@@ -24,6 +24,10 @@ class Model extends CI_Model {
                 "videoHome" => $this->core->cms_widget('videoHome'),
                 "videoHome_action" => $this->core->cms_widget_action('videoHome'),
 
+                  "kreasiKilatImg" => $this->core->cms_widget('kreasiKilatImg'),
+                "kreasiKilatImg_action" => $this->core->cms_widget_action('kreasiKilatImg'),
+
+
                 "sales" => $this->core->cms_widget('sales'),
                 "sales_action" => $this->core->cms_widget_action('sales'),
 

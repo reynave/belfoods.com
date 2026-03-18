@@ -18,14 +18,15 @@ defined('BASEPATH') or exit('No direct script access allowed');
               
                 <?php foreach($core['content']['list'] as $row){ ?>
                     <div class="col-12 col-md-3 mb-4" <?php if($core['login'] == true){ echo ' style="display: block; border:1px solid"' ; } ?>>
-
-                        
+ 
                         <div class="card shadow-lg border-1 rounded-4">
                             <img src="<?php echo $row['img'] == '' ? 'https://dummyimage.com/600x400/fff/fd8103.jpg' : $row['img']; ?>" class="card-img-top rounded-top-4" alt="<?php echo $row['h1']; ?>">
                             <div class="card-body pb-3">
-                                <h4 class="mb-1"><?php echo $row['name']; ?></h4> 
+                                <div style="min-height: 90px;">  
+                                    <h4 class="mb-1"><?php echo $row['name']; ?></h4> 
+                                </div>
                                 <p><?php echo $row['date'] ?? 'No date'; ?></p>
-                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded">Baca selengkapnya <i class="bi bi-caret-right-square-fill"></i></a>
+                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded fw-bold">Baca selengkapnya</a>
                                 <div><?php echo $row['action']; ?></div>
                             </div>
                         </div> 

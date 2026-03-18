@@ -10,9 +10,7 @@
                 <h1 class="VAG-Rounded-Bold color-orange"><?php echo $core['content']['name'];?></h1>
             </div>
             <div class="col-lg-8 col-12">
-                <div class="promo-card">
-                    <img src="<?php echo $core['content']['img'];?>" width="100%">
-                </div>
+                <img src="<?php echo $core['content']['img'];?>" width="100%">
             </div>
             <div class="col-lg-4 col-12">
                 <div class="promo-copy">
