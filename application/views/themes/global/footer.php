@@ -8,7 +8,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="row g-1">
                 <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
                     <a href="<?php echo base_url(); ?>">
-                        <img src="<?php echo base_url(); ?>public/logo-mini.png" height="60px" alt="Belfoods Logo">
+                        <img src="<?php echo base_url(); ?>public/Logo-Belfoods-text.png" height="60px" alt="Belfoods Logo">
                     </a>
                 </div>
                 <div class="col-12 col-md-4 text-center order-3 order-md-2">

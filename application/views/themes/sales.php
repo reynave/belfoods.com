@@ -33,13 +33,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <div><?php echo $core['content']['id'] == "" ? $core['content']['insert'] :   $core['content']['edit'];  ?></div>
 
                     <div class="col-12 col-md-6 d-grid align-items-center">
-                        <a  href="mailto:<?php echo $core['content']['h2']?>" class="btn btn-lg btn-orange rounded-pill">
+                        <a  href="mailto:<?php echo $core['content']['h2']?>" class="btn btn-lg btn-orange rounded-pill" >
                            <i class="bi bi-envelope-at"></i> <?php echo $core['content']['h2']?>
                         </a> 
                     </div>
                     <div class="col-12 col-md-6  d-grid align-items-center"> 
-                        <a target="_blank" href="https://wa.me/<?php echo $core['content']['h3']?>" class="btn btn-lg btn-success rounded-pill ">
-                           <i class="bi bi-whatsapp"></i>  Whatsapp Sales
+                        <a target="_blank" href="https://wa.me/<?php echo $core['content']['h3']?>" 
+                        class="btn btn-lg btn-success rounded-pill " style="font-family: 'VAG-Rounded-Bold';">
+                           <i class="bi bi-whatsapp"></i> Whatsapp
                         </a>
                     </div>
 

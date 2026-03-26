@@ -25,7 +25,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                 <div style="min-height: 90px;">  
                                     <h4 class="mb-1"><?php echo $row['name']; ?></h4> 
                                 </div>
-                                <p><?php echo $row['date'] ?? 'No date'; ?></p>
+                              
                                 <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded fw-bold">Baca selengkapnya</a>
                                 <div><?php echo $row['action']; ?></div>
                             </div>

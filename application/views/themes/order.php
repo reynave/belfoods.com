@@ -9,16 +9,15 @@
             <div class="col-12 text-center">
                 <h1 class="VAG-Rounded-Bold color-orange"><?php echo $core['content']['name'];?></h1>
             </div>
-            <div class="col-lg-8 col-12">
-                <img src="<?php echo $core['content']['img'];?>" width="100%">
+            <div class="col-lg-12 col-12 text-center">
+                <img src="<?php echo $core['content']['img'];?>" width="60%">
             </div>
-            <div class="col-lg-4 col-12">
-                <div class="promo-copy">
-
+            <!-- <div class="col-lg-4 col-12">
+                <div class="promo-copy"> 
                     <div class="promo-links fnRichtext" <?php echo $core['content']['data']['content']?>><?php echo $core['content']['content']?>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="col-12">
                 <div class="row g-0 mb-5">
                     <?php foreach($custom['onlineShop'] as $row ){ ?>

@@ -10,12 +10,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
     <?php } ?>
 </section>
 <?php echo $custom['banner_action']; ?>
-
+   <br><br>
 <!-- HOME DARK BGN INFO   -->
 <section class="mb-5 bg-dark text-white py-5">
     <div class="container">
         <div class="row">
             <div class="col-12">
+             
                 <?php foreach($core['content']['galleries'] as $gallery){ ?>
                 <img src="<?php echo $gallery['img']; ?>" width="100%"> 
                  <div class="text-center"> <?php echo $gallery['action']; ?></div>
