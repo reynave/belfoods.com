@@ -39,7 +39,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     </div>  
                                       <div class="product-card-info d-grid rounded-bottom-5">
                                         <h2 class="product-card-brand"><?php echo $core['pages']['name']; ?></h2>
-                                           <h1 class="product-card-name" style="min-height: 60px;"><?php echo str_replace($core['pages']['name'], "", $row['name']); ?></h1>
+                                           <h1 class="product-card-name" style="min-height: 60px;"><b><?php echo str_replace($core['pages']['name'], "", $row['name']); ?></b></h1>
                               
                                         <button class="btn  btn-light rounded-pill fw-bold">Selengkapnya</button>
                                     </div>
@@ -120,7 +120,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     </div>  
                                       <div class="product-card-info d-grid rounded-bottom-5">
                                         <h2 class="product-card-brand"><?php echo $core['pages']['name']; ?></h2>
-                                        <h1 class="product-card-name" style="min-height: 60px;"><?php echo str_replace(strtoupper($core['pages']['name']), "", strtoupper($row['name'])); ?></h1>
+                                        <h1 class="product-card-name" style="min-height: 60px;"><b><?php echo str_replace(($core['pages']['name']), "", ($row['name'])); ?></b></h1>
                               
                                         <button class="btn  btn-light rounded-pill fw-bold" >Selengkapnya</button>
                                     </div>

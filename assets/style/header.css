@@ -143,12 +143,12 @@ a.nav-link {
     color: #ffffff;
     font-weight: 700;
     padding: 0.4rem 1.5rem;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4); 
+    /* box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);  */
    font-family: 'VAG-Rounded-Bold'; 
 }
 .btn-orange:hover {
-    color: #fd8103;
-    background-color: #fff;
+     color: #ffffff;
+    background-color: #e37302;
 }
 
 .btn-order {

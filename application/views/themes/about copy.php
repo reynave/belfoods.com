@@ -1,16 +1,32 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 ?>  
-    
+ 
 
     <section class=" banner-product-detail mb-5" style="background:rgb(193, 2, 48);">
-        
-        <div class="col-12 text-center"> 
-            <img src="<?php echo $core['content']['img'];?>" class="rounded-5 mt-4" width="100%" alt="About Belfoods.com">
-        </div>  
-        <div class="col-12 text-center"> 
-            <div> <?php echo $core['content']['edit'];?> </div>
-        </div> 
+        <!-- <div class="wrapper-md">
+
+            <div class="container ">
+                <div class="row">
+                    <div class="text-center">
+                        <h2 class="luckiest-guy-regular mb-3 text-white"><?php echo $core['pages']['name'];?></h2>
+                         <h3 class="mb-4 text-white fnText" <?php echo $core['content']['data']['h1'];?> ><?php echo $core['content']['h1'];?></h3> -->
+ <!-- <h5 class="text-white mt-3 fnText" <?php echo $core['content']['data']['h2'];?> ><?php echo $core['content']['h2'];?> </h5>
+                         
+                    </div> 
+                    
+                </div>
+            </div>
+
+        </div> -->
+        <div class="container">
+            <div class="col-12 text-center"> 
+                <img src="<?php echo $core['content']['img'];?>" class="rounded-5 mt-4" width="100%" alt="About Belfoods.com">
+            </div>  
+            <div class="col-12 text-center"> 
+                <div> <?php echo $core['content']['edit'];?> </div>
+            </div>
+        </div>
     </section>
 
     <div class="wrapper">

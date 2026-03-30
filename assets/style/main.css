@@ -749,7 +749,7 @@ h6 {
 
 .blog-section h1 {
     font-family: "Nunito", sans-serif; 
-    font-weight: bold; 
+   /*font-weight: bold; */
     font-size: 1.4rem;
     letter-spacing: 1px;
     color: #000000;

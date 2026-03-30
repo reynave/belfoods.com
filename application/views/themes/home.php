@@ -48,7 +48,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <div class="row">
             <div class="col-12 ">
-                <h1 class="text-center mb-3"> Produk katalog </h1>
+                <h1 class="text-center mb-3"> Produk Katalog </h1>
                 <div class="slider-tabs">
                         <?php foreach ($core['navigation'] as $row) { ?>
                             <?php if($row['id'] == "3"){ ?>
