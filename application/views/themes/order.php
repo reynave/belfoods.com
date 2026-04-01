@@ -38,6 +38,20 @@
             </div>
         </div>
 
+
+        <div class="row">
+         
+            <?php foreach($custom['bannerOrder'] as $row ){ ?>
+                <div class="col-12 mb-3 text-center">    
+                    <img src="<?php echo $row['img'];?>" width="100%">
+                </div>
+            <?php } ?>
+            
+            <div class="col-12">
+                <?php echo $custom['bannerOrder_action'];?>
+            </div>
+        </div>
+
     </div>
 </section>
 

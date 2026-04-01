@@ -34,9 +34,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                     <div class="col-12 col-md-6 d-grid align-items-center">
                         <a  href="mailto:<?php echo $core['content']['h2']?>" class="btn btn-lg btn-orange rounded-pill" >
-                           <i class="bi bi-envelope-at"></i> <?php echo $core['content']['h2']?>
+                           <i class="bi bi-envelope-at"></i>  e-Mail
                         </a> 
                     </div>
+
+                    <a href="mailto:tujuan@contoh.com?subject=Halo&cc=lain@contoh.com&body=Isi%20pesan">
+  Kirim Email dengan Detail
+</a>
                     <div class="col-12 col-md-6  d-grid align-items-center"> 
                         <a target="_blank" href="https://wa.me/<?php echo $core['content']['h3']?>" 
                         class="btn btn-lg btn-success rounded-pill " style="font-family: 'VAG-Rounded-Bold';">

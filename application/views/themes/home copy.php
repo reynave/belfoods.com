@@ -83,22 +83,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
  
 <!-- Kreasi Kilat BLOG -->
 <div  class="kreasi-kilat d-none d-md-block">
-    
+    <div class="kreasi-kilat-icon">
+        <?php foreach($custom['kreasiKilatImg'] as $row){?>
+            <img src="<?php echo $row['img']; ?>" width="100%" alt="Kreasi Kilat Belfoods">
+      
+            <div class="text-center"> <?php echo $row['modal']; ?> </div>
+        <?php } ?>
+ 
+        
+    </div>
 
-    <div class="container-fluid" > 
+    <div class="container" > 
         <div class="row g-0"> 
-           <div class="col-3 d-flex flex-column justify-content-end  ">
-  
-                 <?php foreach($custom['kreasiKilatImg'] as $row){?>
-                    <img src="<?php echo $row['img']; ?>" width="100%" alt="Kreasi Kilat Belfoods"> 
-                    <div class="text-center"> <?php echo $row['modal']; ?> </div>
-                <?php } ?>
-            </div>
             
-            <div class="col-9 ">
-                <div class="px-5">
+            <div class="col-9 offset-3">
 
-                
                 <?php 
                 $data = [];
                 foreach ($core['navigation'] as $row) { 
@@ -135,7 +134,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                 </div>
                 <br>
-</div>
+
             </div>
         </div>
     </div>

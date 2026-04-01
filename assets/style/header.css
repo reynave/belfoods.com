@@ -151,6 +151,12 @@ a.nav-link {
     background-color: #e37302;
 }
 
+.btn-orange:active {
+    background-color: #b95c00 !important;
+    color: #fff !important;
+    border: 2px solid #fd800376 !important;
+}
+
 .btn-order {
     border-radius: 999px;
     border: 2px solid #d4a53d;

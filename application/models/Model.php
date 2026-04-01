@@ -94,8 +94,12 @@ class Model extends CI_Model {
                 "orderNow"   => $this->core->cms_widget('orderNow'),
                 "orderNow_action" => $this->core->cms_widget_action('orderNow'), 
 
-                 "onlineShop"   => $this->core->cms_widget('onlineShop'),
+                "onlineShop"   => $this->core->cms_widget('onlineShop'),
                 "onlineShop_action" => $this->core->cms_widget_action('onlineShop'), 
+
+
+                "bannerOrder"   => $this->core->cms_widget('bannerOrder'),
+                "bannerOrder_action" => $this->core->cms_widget_action('bannerOrder'), 
 
               );
               return $data;

@@ -30,7 +30,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                             <div class="card-body">
                                 <h5 class="mb-1"><?php echo $core['pages']['title']?></h5>
                                 <h1 class="card-title text-white py-1"><?php echo $row['name']?></h1>
-                                <a href="<?php echo $row['href']?>" class="btn btn-white rounded mt-1 fw-bold">Baca Selengkapnya</a>
+                                  <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded fw-bold d-block">Lihat Resep</a>
                                 <div><?php echo $row['action']; ?></div>
                             </div>
                         </div>
@@ -95,10 +95,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     alt="<?php echo $row['h1']; ?>">
                             </div>
 
-                            <div class="card-body">
+                             <div class="card-body">
                                 <h5 class="mb-1"><?php echo $core['pages']['title']?></h5>
-                                <h1 class="card-title text-white   py-1"><?php echo $row['name']?></h1>
-                                <a href="<?php echo $row['href']?>" class="btn btn-white rounded mt-1">Baca Selengkapnya </a>  
+                                <h1 class="card-title text-white fw-bold py-1"><?php echo $row['name']?></h1>
+                                <a href="<?php echo $row['href']?>" class="btn btn-white rounded mt-1 fw-bold d-block">Lihat Resep </a>  
                             </div>
                         </div>
                     </div>
