@@ -2,7 +2,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 $industryImageAltText = 'exaque';
-$readMoreLabel = 'Read More';
+$readMoreLabel = 'Baca Selengkapnya';
 ?>
 <!-- Hero Start -->
 <section class="bg-half-170 d-table w-100" style="background: url('<?php echo $custom['industryBanner'][0]['img']; ?>');">

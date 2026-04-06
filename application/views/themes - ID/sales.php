@@ -2,8 +2,8 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 $emailButtonLabel = 'e-Mail';
-$sendEmailDetailLabel = 'Send Email with Details';
-$whatsappButtonLabel = 'WhatsApp';
+$sendEmailDetailLabel = 'Kirim Email dengan Detail';
+$whatsappButtonLabel = 'Whatsapp';
 ?>  
 
 

@@ -78,7 +78,6 @@ $toggleNavigationLabel = 'Toggle navigation';
                                 <li class="nav-item"><a class="nav-link <?php echo $row['active'] == true ? 'active' : ''; ?>" href="<?php echo $row['href']; ?>"><?php echo $row['name']; ?></a></li>
                             <?php } ?>
                         <?php } ?>
- 
 
                         <li class="nav-item">
                             <?php foreach($custom['orderNow'] as $row){ ?>
@@ -88,18 +87,6 @@ $toggleNavigationLabel = 'Toggle navigation';
                                   <?php echo $row['modal']; ?>
                             <?php } ?> 
                         </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://belfoods.com/id/">
-                                <small>ID</small>
-                            </a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://belfoods.com/en/">
-                                <small>EN</small>
-                            </a>
-                        </li>
-
                     
                     </ul>
                 </div>

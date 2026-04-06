@@ -1,5 +1,13 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
+
+$productPageAlert = 'Halaman ini adalah halaman produk, untuk mengubah tampilannya silahkan edit pada bagian konten dengan tipe produk';
+$colorSettingsLabel = 'Pengaturan Warna code (#hex)';
+$h4BackgroundColorLabel = 'H4. Background Color';
+$h5BigTextColorLabel = 'H5. H1 Color (big text)';
+$h6ContentTextColorLabel = 'H6. Content text color';
+$productDetailButtonLabel = 'Selengkapnya';
+$othersSuffix = 'Lainnya';
 ?>  
 <?php if($core['table'] == 'cms_pages'){ ?>
     <br> 
@@ -20,26 +28,26 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                     <?php if($core['login']){ ?>
                     <div class="alert alert-warning">
-                        <p>Halaman ini adalah halaman produk, untuk mengubah tampilannya silahkan edit pada bagian konten dengan tipe produk</p>
+                        <p><?php echo $productPageAlert; ?></p>
                         <?php echo $core['content']['insert']; ?>  <?php echo $core['content']['galleries_action']; ?>
 
-                        <p>Pengaturan Warna code (#hex)</p>
+                        <p><?php echo $colorSettingsLabel; ?></p>
                         <table class="table table-sm">
                             <tbody>
                                 <tr>
-                                    <td><strong>H4. Background Color </strong></td>
+                                    <td><strong><?php echo $h4BackgroundColorLabel; ?> </strong></td>
                                     <td>
                                         <div class="form-control fnText" <?php echo $core['content']['data']['h4']; ?>><?php echo $core['content']['h4']; ?><div>
                                     </td>
                                 </tr>
                                  <tr>
-                                    <td><strong>H5. H1 Color (big text)</strong></td>
+                                    <td><strong><?php echo $h5BigTextColorLabel; ?></strong></td>
                                     <td>
                                         <div class="form-control fnText" <?php echo $core['content']['data']['h5']; ?>><?php echo $core['content']['h5']; ?><div>
                                     </td>
                                 </tr>
                                  <tr>
-                                    <td><strong>H6. Content text color</strong></td>
+                                    <td><strong><?php echo $h6ContentTextColorLabel; ?></strong></td>
                                     <td>
                                         <div class="form-control fnText" <?php echo $core['content']['data']['h6']; ?>><?php echo $core['content']['h6']; ?><div>
                                     </td>
@@ -66,7 +74,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                         <h2 class="product-card-brand"><?php echo $core['pages']['name']; ?></h2>
                                            <h1 class="product-card-name" style="min-height: 60px;"><?php echo str_replace(strtoupper($core['pages']['name']), "", strtoupper($row['name'])); ?></h1>
                               
-                                        <button class="btn  btn-light rounded-pill">Selengkapnya</button>
+                                        <button class="btn  btn-light rounded-pill"><?php echo $productDetailButtonLabel; ?></button>
                                     </div>
                                 </a>
                               
@@ -118,7 +126,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="text-center fw-bold mb-4"><?php echo $core['pages']['title']?> Lainnya</h2> 
+                    <h2 class="text-center fw-bold mb-4"><?php echo $core['pages']['title']?> <?php echo $othersSuffix; ?></h2> 
                 </div>
             </div>
 
@@ -147,7 +155,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                         <h2 class="product-card-brand"><?php echo $core['pages']['name']; ?></h2>
                                         <h1 class="product-card-name" style="min-height: 60px;"><?php echo str_replace(strtoupper($core['pages']['name']), "", strtoupper($row['name'])); ?></h1>
                               
-                                        <button class="btn  btn-light rounded-pill">Selengkapnya</button>
+                                        <button class="btn  btn-light rounded-pill"><?php echo $productDetailButtonLabel; ?></button>
                                     </div>
                                 </a>
                               

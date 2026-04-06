@@ -1,11 +1,26 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
+
+$productCatalog = 'Produk Katalog';
+$kreasiKilat = 'Kreasi Kilat';
+$bannerAltText = 'Banner Belfoods';
+$kreasiKilatAltText = 'Kreasi Kilat Belfoods';
+$kreasiKilatDefaultName = 'Kreasi Kilat';
+$kreasiKilatMobileTitle = 'Masak Sat Set Untuk Keluarga';
+$viewRecipeLabel = 'Lihat Resep';
+$belfoodsLogoAltText = 'Belfoods Logo';
+$replaceVideoAlertText = 'untuk ganti video bisa update di folder';
+$replaceVideoFolderLabel = 'public/video/home.mp4';
+$replaceVideoAlertText2 = 'dengan nama file harus sama dan format mp4 adalah';
+$replaceVideoNameLabel = 'home.mp4';
+$tvcModalTitle = 'TVC Belfoods 15 detik';
+$closeLabel = 'Tutup';
 ?>
 <!-- HOME BIG BANNER   -->
 <section id="home-banner" class="home-banner">  
     <?php foreach($custom['banner'] as $row){?>
     <div>
-        <img src="<?php echo $row['img']; ?>" width="100%" alt="Banner Belfoods">
+        <img src="<?php echo $row['img']; ?>" width="100%" alt="<?php echo $bannerAltText; ?>">
     </div> 
     <?php } ?>
 </section>
@@ -48,7 +63,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
         <div class="row">
             <div class="col-12 ">
-                <h1 class="text-center mb-3"> Produk Katalog </h1>
+                <h1 class="text-center mb-3"> <?php echo $productCatalog; ?> </h1>
                 <div class="slider-tabs">
                         <?php foreach ($core['navigation'] as $row) { ?>
                             <?php if($row['id'] == "3"){ ?>
@@ -85,7 +100,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <div  class="kreasi-kilat d-none d-md-block">
     <div class="kreasi-kilat-icon">
         <?php foreach($custom['kreasiKilatImg'] as $row){?>
-            <img src="<?php echo $row['img']; ?>" width="100%" alt="Kreasi Kilat Belfoods">
+            <img src="<?php echo $row['img']; ?>" width="100%" alt="<?php echo $kreasiKilatAltText; ?>">
       
             <div class="text-center"> <?php echo $row['modal']; ?> </div>
         <?php } ?>
@@ -111,7 +126,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 
                 <h2 class="text-end fw-bold "><?php echo $data['name']; ?>  </h2>
-                <h1 class="text-end VAG-Rounded-Bold " style="font-size: 3rem;">Masak Sat Set Untuk Keluarga</h1>
+                <h1 class="text-end VAG-Rounded-Bold " style="font-size: 3rem;"><?php echo $kreasiKilatMobileTitle; ?></h1>
 
                 <div id="blog" class="slick-3-1 mb-5">
 
@@ -123,10 +138,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     class="rounded-4">
                             </div>
                             <div class="card-body">
-                                <h5 class="mb-1 text-white"><?php echo $data['name'] ?? 'Kreasi Kilat'; ?></h5>
+                                <h5 class="mb-1 text-white"><?php echo $data['name'] ?? $kreasiKilatDefaultName; ?></h5>
                                <div style="min-height: 80px;">
                                  <h4 class="py-1 text-white" ><?php echo $row['name']; ?></h4></div>
-                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1 fw-bold d-block">Lihat Resep </a>
+                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1 fw-bold d-block"><?php echo $viewRecipeLabel; ?> </a>
                             </div>
                         </div>
                     </div>
@@ -146,7 +161,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="row">
             <div class="col-12 text-center mb-1">
                 <h2 class=" fw-bold "><?php echo $data['name']; ?>  </h2>
-                <h1 class="VAG-Rounded-Bold " style="font-size: 3rem;">Masak Sat Set Untuk Keluarga</h1>
+                <h1 class="VAG-Rounded-Bold " style="font-size: 3rem;"><?php echo $kreasiKilatMobileTitle; ?></h1>
 
             </div>
             <div class="col-12">
@@ -161,9 +176,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                     class="rounded-4">
                             </div>
                             <div class="card-body">
-                                <h5 class="mb-1 text-white"><?php echo $data['name'] ?? 'Kreasi Kilat'; ?></h5>
+                                <h5 class="mb-1 text-white"><?php echo $data['name'] ?? $kreasiKilatDefaultName; ?></h5>
                                 <h4 class="py-1 text-white"><?php echo $row['name']; ?></h4>
-                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1 fw-bold">Lihat Resep </a>
+                                <a href="<?php echo $row['href']; ?>" class="btn btn-white rounded mt-1 fw-bold"><?php echo $viewRecipeLabel; ?> </a>
                             </div>
                         </div>
                     </div>
@@ -210,7 +225,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
                 <div class="row">
                     <div class="col-12 mb-3">
-                        <img src="<?php echo base_url(); ?>public/logo-mini.png" height="30" alt="Belfoods Logo">
+                        <img src="<?php echo base_url(); ?>public/logo-mini.png" height="30" alt="<?php echo $belfoodsLogoAltText; ?>">
                     </div>
                 </div>
                 <h2 class="mb-4 fnText" <?php echo $row['data']['h1']; ?>><?php echo $row['h1']; ?></h2>
@@ -223,8 +238,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <div><?php echo $row['modal']; ?></div>
                 <?php if($core['login']){ ?>
                 <div class="alert alert-warning mt-3" role="alert">
-                    untuk ganti video bisa update di folder <strong>public/video/home.mp4</strong> dengan
-                    nama file harus sama dan format mp4 adalah <strong>"home.mp4"</strong>
+                    <?php echo $replaceVideoAlertText; ?> <strong><?php echo $replaceVideoFolderLabel; ?></strong> <?php echo $replaceVideoAlertText2; ?> <strong>"<?php echo $replaceVideoNameLabel; ?>"</strong>
                 </div>
                 <?php } ?>
 
@@ -238,9 +252,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
     aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl">
         <div class="modal-content">
-            <h2 class="visually-hidden" id="tvcModalLabel">TVC Belfoods 15 detik</h2>
+            <h2 class="visually-hidden" id="tvcModalLabel"><?php echo $tvcModalTitle; ?></h2>
             <button type="button" class="btn-close btn-close-white hero-video-modal__close" data-bs-dismiss="modal"
-                aria-label="Tutup"></button>
+                aria-label="<?php echo $closeLabel; ?>"></button>
             <div class="ratio ratio-16x9">
                 <video id="tvcModalVideo" src="<?php echo base_url(); ?>public/video/TVC_Belfoods_15s.mp4" controls playsinline></video>
             </div>

@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$productPageAlert = 'This is a product page. To change its appearance, please edit the content section with the product type.';
-$productDetailButtonLabel = 'Read More';
-$othersSuffix = 'Others';
+$productPageAlert = 'Halaman ini adalah halaman produk, untuk mengubah tampilannya silahkan edit pada bagian konten dengan tipe produk';
+$productDetailButtonLabel = 'Selengkapnya';
+$othersSuffix = 'Lainnya';
 ?>  
 <?php if($core['table'] == 'cms_pages'){ ?>
     <br> 

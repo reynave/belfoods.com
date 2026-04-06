@@ -8,6 +8,9 @@ class Model extends CI_Model {
   }
   
   function custom($theme="index"){
+
+    $name = $this->core->select("name", "cms_pages", "id = 2");
+
     switch ($theme) {
         case "home":
             $data = array(
@@ -31,7 +34,7 @@ class Model extends CI_Model {
                 "sales" => $this->core->cms_widget('sales'),
                 "sales_action" => $this->core->cms_widget_action('sales'),
 
-                "kreasiKilat" => $this->core->post(10, 'Kreasi Kilat'),
+                "kreasiKilat" => $this->core->post(10, $name ),
                 "promo" => $this->core->post(3, 'promo'),
                 
             );

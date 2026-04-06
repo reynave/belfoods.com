@@ -1,22 +1,22 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$productCatalog = 'Product Catalog';
-$kreasiKilat = 'Quick Creations';
-$infoBuahHati = 'Children Info';
+$productCatalog = 'Produk Katalog';
+$kreasiKilat = 'Kreasi Kilat';
+$infoBuahHati = 'Info Buah Hati';
 $bannerAltText = 'Banner Belfoods';
-$kreasiKilatAltText = 'Belfoods Quick Creations';
-$kreasiKilatDefaultName = 'Quick Creations';
-$kreasiKilatSuffix = 'for Family';
-$kreasiKilatMobileTitle = 'Quick Cooking for Family';
-$viewRecipeLabel = 'View Recipe';
+$kreasiKilatAltText = 'Kreasi Kilat Belfoods';
+$kreasiKilatDefaultName = 'Kreasi Kilat';
+$kreasiKilatSuffix = 'Untuk Keluarga';
+$kreasiKilatMobileTitle = 'Masak Sat Set Untuk Keluarga';
+$viewRecipeLabel = 'Lihat Resep';
 $belfoodsLogoAltText = 'Belfoods Logo';
-$replaceVideoAlertText = 'To replace the video, update the file in folder';
+$replaceVideoAlertText = 'untuk ganti video bisa update di folder';
 $replaceVideoFolderLabel = 'public/video/home.mp4';
-$replaceVideoAlertText2 = 'with the same filename and MP4 format:';
+$replaceVideoAlertText2 = 'dengan nama file harus sama dan format mp4 adalah';
 $replaceVideoNameLabel = 'home.mp4';
-$tvcModalTitle = 'Belfoods TVC 15 Seconds';
-$closeLabel = 'Close';
+$tvcModalTitle = 'TVC Belfoods 15 detik';
+$closeLabel = 'Tutup';
 
 ?>
 <!-- HOME BIG BANNER   -->

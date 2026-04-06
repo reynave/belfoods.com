@@ -1,9 +1,9 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-$readMoreLabel = 'Read More';
-$othersSuffix = 'Others';
-$readMoreLabelTitle = 'Read More';
+$readMoreLabel = 'Baca selengkapnya';
+$othersSuffix = 'Lainnya';
+$readMoreLabelTitle = 'Baca Selengkapnya';
 ?>  
 <?php if($core['table'] == 'cms_pages'){ ?>
     <section id="blog" class="py-5 blog-section ">
